@@ -2,15 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: child
-  namespace: argo
 spec:
   project: default
   destination:
     namespace: argo
-    server: https://kubernetes.default.svc
+    name: test
   sources:
     - path: child/
-      repoURL: https://github.com/kahmnkk/sample-argo.git
+      repoURL: https://github.com/Cloud-Hacks/sample-argo.git
       targetRevision: main
       helm:
         releaseName: child-app
