@@ -9,7 +9,7 @@ spec:
     name: test
   sources:
     - path: parent/
-      repoURL: https://github.com/kahmnkk/sample-argo.git
+      repoURL: https://github.com/Cloud-Hacks/sample-argo.git
       targetRevision: main
       helm:
         releaseName: parent-app
