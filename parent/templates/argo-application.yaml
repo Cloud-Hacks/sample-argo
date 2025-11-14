@@ -10,7 +10,7 @@ spec:
   sources:
     - path: child/
       repoURL: https://github.com/Cloud-Hacks/sample-argo.git
-      targetRevision: main
+      targetRevision: test
       helm:
         releaseName: child-app
         parameters:
